@@ -1,0 +1,35 @@
+﻿/*------------------------ EDDIE'S CUSTOM STYLING -------------------------*/
+.navbar.default-layout .navbar-brand-wrapper .navbar-brand img.mainLogo123 {
+    width: 100%;
+}
+
+.sidebar {
+    background: linear-gradient(to top, #505865, #2b333e);
+}
+
+.navbar.default-layout .navbar-brand-wrapper {
+    background: #2b333e;
+}
+
+.app-sidebar {
+    background: #505865;
+}
+
+.item-purchase-banner {
+    display: none;
+}
+
+.purchase-banner-active .navbar.fixed-top + .page-body-wrapper {
+    padding-top: 55px;
+}
+
+.purchase-banner-active .navbar.fixed-top {
+    top: 0px;
+}
+
+.restAzureLogo {
+    width: 220px !important;
+}
+.chatbot-image {
+    width: 45%;
+}
