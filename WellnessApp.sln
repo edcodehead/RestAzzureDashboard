@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WellnessAppWeb", "StressAppWeb\WellnessAppWeb.csproj", "{6817CD7F-C6C2-4DCE-AFB8-1EC91756F91D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WellnessApp.Web", "WellnessApp.Web\WellnessApp.Web.csproj", "{6817CD7F-C6C2-4DCE-AFB8-1EC91756F91D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D95F29D9-F9C9-4741-8CD4-8C12D44A8876} = {D95F29D9-F9C9-4741-8CD4-8C12D44A8876}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WellnessApp.Core", "WellnessApp.Core\WellnessApp.Core.csproj", "{30AC056F-8EFF-49AD-AB3E-2027663CFA7A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WellnessApp.DAL", "WellnessApp.DAL\WellnessApp.DAL.csproj", "{D95F29D9-F9C9-4741-8CD4-8C12D44A8876}"
+	ProjectSection(ProjectDependencies) = postProject
+		{30AC056F-8EFF-49AD-AB3E-2027663CFA7A} = {30AC056F-8EFF-49AD-AB3E-2027663CFA7A}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,14 @@ Global
 		{6817CD7F-C6C2-4DCE-AFB8-1EC91756F91D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6817CD7F-C6C2-4DCE-AFB8-1EC91756F91D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6817CD7F-C6C2-4DCE-AFB8-1EC91756F91D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30AC056F-8EFF-49AD-AB3E-2027663CFA7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30AC056F-8EFF-49AD-AB3E-2027663CFA7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30AC056F-8EFF-49AD-AB3E-2027663CFA7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30AC056F-8EFF-49AD-AB3E-2027663CFA7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D95F29D9-F9C9-4741-8CD4-8C12D44A8876}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D95F29D9-F9C9-4741-8CD4-8C12D44A8876}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D95F29D9-F9C9-4741-8CD4-8C12D44A8876}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D95F29D9-F9C9-4741-8CD4-8C12D44A8876}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
