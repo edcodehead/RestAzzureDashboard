@@ -350,14 +350,16 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
-  background: url("../img/hero-bg.jpg");
-  position: relative;
-  padding: 120px 0 0 0;
+    width: 100%;
+    background: url("../img/hero-bg.jpg") !important;
+    background-size: 130% 130% !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+    padding: 120px 0 0 0;
 }
 #hero:before {
   content: "";
-  background: rgba(2, 5, 161, 0.91);
+  background: rgb(255 255 255 / 0%) !important;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -683,7 +685,7 @@ section {
   font-size: 14px;
 }
 .about .video-box {
-  background: url("../img/about.png") center center no-repeat;
+  background: url("../img/stress-at-work1.jpg") center center no-repeat;
   background-size: contain;
   min-height: 300px;
 }
@@ -1477,4 +1479,12 @@ section {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
   }
+}
+
+.contact {
+    background-color: #f5f5ff !important;
+}
+
+section#contact {
+    background-color: #f5f5ff !important;
 }

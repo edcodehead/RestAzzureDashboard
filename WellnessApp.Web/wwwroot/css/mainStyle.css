@@ -4,7 +4,7 @@
 }
 
 .sidebar {
-    background: linear-gradient(to top, #505865, #2b333e);
+    background: linear-gradient(to top, #505865, #010488) !important;
 }
 
 .navbar.default-layout .navbar-brand-wrapper {
@@ -32,4 +32,33 @@
 }
 .chatbot-image {
     width: 45%;
+}
+
+.contact {
+    background-color: #f5f5ff !important;
+}
+
+section#contact {
+    background-color: #f5f5ff !important;
+}
+
+/*Eddie's Customizations*/
+
+.text-center.navbar-brand-wrapper.d-flex.align-items-top.justify-content-center {
+    background: #010488 !important;
+}
+
+.edTextTitle {
+    margin-top: 10px;
+}
+
+.page-title {
+    margin-top: 0;
+    margin-bottom: 2px;
+    padding-left: 0.5em;
+    font-size: 1.5em;
+}
+
+.content-wrapper {
+    padding-bottom: 10%;
 }

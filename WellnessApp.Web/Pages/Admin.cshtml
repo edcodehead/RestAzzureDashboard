@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="assetsAdmin/css/demo_1/style.css">
     <!-- End Layout styles -->
     <link rel="shortcut icon" href="assetsAdmin/images/favicon.ico" />
-    <link rel="stylesheet" href="~/css/mainStyle.css"/>
+    <link rel="stylesheet" href="./css/mainStyle.css"/>
 </head>
 <body>
     <div class="container-scroller">
@@ -34,7 +34,8 @@
         <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
                 <a class="navbar-brand brand-logo" href="Index">
-                    <img src="assetsAdmin/images/RestAzure-LogoV1.png" alt="logo" style="width: 200px;"/>
+                    <h2 class="edTextTitle">Wellness App</h2>
+                    @*<img src="assetsAdmin/images/RestAzure-LogoV1.png" alt="logo" style="width: 200px;"/>*@
                 </a>
                 <a class="navbar-brand brand-logo-mini" href="Index">
                     <img src="assetsAdmin/images/logo-mini.svg" alt="logo" />
@@ -42,39 +43,8 @@
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-center">
                 <ul class="navbar-nav">
-                    <li class="nav-item font-weight-semibold d-none d-lg-block">Phone: 1-800-123-HELP</li>
-                    <li class="nav-item dropdown language-dropdown">
-                        <a class="nav-link dropdown-toggle px-2 d-flex align-items-center" id="LanguageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-                            <div class="d-inline-flex mr-0 mr-md-3">
-                                <div class="flag-icon-holder">
-                                    <i class="flag-icon flag-icon-us"></i>
-                                </div>
-                            </div>
-                            <span class="profile-text font-weight-medium d-none d-md-block">English</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-left navbar-dropdown py-2" aria-labelledby="LanguageDropdown">
-                            <a class="dropdown-item">
-                                <div class="flag-icon-holder">
-                                    <i class="flag-icon flag-icon-us"></i>
-                                </div>English
-                            </a>
-                            <a class="dropdown-item">
-                                <div class="flag-icon-holder">
-                                    <i class="flag-icon flag-icon-fr"></i>
-                                </div>French
-                            </a>
-                            <a class="dropdown-item">
-                                <div class="flag-icon-holder">
-                                    <i class="flag-icon flag-icon-ae"></i>
-                                </div>Arabic
-                            </a>
-                            <a class="dropdown-item">
-                                <div class="flag-icon-holder">
-                                    <i class="flag-icon flag-icon-ru"></i>
-                                </div>Russian
-                            </a>
-                        </div>
-                    </li>
+                    <li class="page-title">Dashboard</li>
+                    
                 </ul>
                 <form class="ml-auto search-form d-none d-md-block" action="#">
                     <div class="form-group">
@@ -208,7 +178,7 @@
                             <span class="menu-title">Dashboard</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    @*<li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                             <i class="menu-icon typcn typcn-coffee"></i>
                             <span class="menu-title">Basic UI Elements</span>
@@ -227,32 +197,32 @@
                                 </li>
                             </ul>
                         </div>
-                    </li>
+                    </li>*@
                     <li class="nav-item">
-                        <a class="nav-link" href="pagesAdmin/forms/basic_elements.html">
+                        <a class="nav-link" href="employees">
                             <i class="menu-icon typcn typcn-shopping-bag"></i>
-                            <span class="menu-title">Form elements</span>
+                            <span class="menu-title">Employees</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pagesAdmin/charts/chartjs.html">
+                        <a class="nav-link" href="training">
                             <i class="menu-icon typcn typcn-th-large-outline"></i>
-                            <span class="menu-title">Charts</span>
+                            <span class="menu-title">Training</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pagesAdmin/tables/basic-table.html">
+                        <a class="nav-link" href="https://teams.microsoft.com/l/team/19%3anZr7L2YQuoyoTCsr6oc0UBr8ULf7k_wWXbIWkIwgQ0k1%40thread.tacv2/conversations?groupId=2530e6b5-d50e-4947-80a6-9c62800962ab&tenantId=9bbbc9f6-c704-4296-8c05-d6d3e87d0b27" target="_blank">
                             <i class="menu-icon typcn typcn-bell"></i>
-                            <span class="menu-title">Tables</span>
+                            <span class="menu-title">MS Teams</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="pagesAdmin/icons/font-awesome.html">
                             <i class="menu-icon typcn typcn-user-outline"></i>
-                            <span class="menu-title">Icons</span>
+                            <span class="menu-title">Calendar</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    @*<li class="nav-item">
                         <a class="nav-link collapsed" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
                             <i class="menu-icon typcn typcn-document-add"></i>
                             <span class="menu-title">User Pages</span>
@@ -277,7 +247,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </li>
+                    </li>*@
                 </ul>
             </nav>
             <!-- partial -->
@@ -285,23 +255,7 @@
                 <div class="content-wrapper">
                     <!-- Page Title Header Starts-->
                     <div class="row page-title-header">
-                        <div class="col-12">
-                            <div class="page-header">
-                                <h4 class="page-title">Dashboard</h4>
-                                <div class="quick-link-wrapper w-100 d-md-flex flex-md-wrap">
-                                    <ul class="quick-links">
-                                        <li><a href="#">Link 1</a></li>
-                                        <li><a href="#">Link 2</a></li>
-                                        <li><a href="#">Link 3</a></li>
-                                    </ul>
-                                    <ul class="quick-links ml-auto">
-                                        <li><a href="#">Settings</a></li>
-                                        <li><a href="#">Analytics</a></li>
-                                        <li><a href="#">Watchlist</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        
 
 
 
@@ -396,102 +350,8 @@
                             </div>
                         </div>
                     </div> <!-------------End of stats bar section--------------->
-                    <!-------------Start of First 3 Boxes Section --------------->
-                    <div class="row">
-                        <div class="col-md-4 grid-margin stretch-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Chat</h4>
-                                    <p class="card-description">Chat with a sophisticated AI bot or other people.</p>
-                                    <div>
-                                        <img src="/assetsAdmin/images/chatbot-box.jpg" alt="Chat Bot" style="width: 45%;"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 grid-margin stretch-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Forms</h4>
-                                    <p class="card-description">Fill out fun & simple forms.</p>
-                                    <ul class="list-arrow">
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                        <li>Consectetur adipiscing elit</li>
-                                        <li>Integer molestie lorem at massa</li>
-                                        <li>Facilisis in pretium nisl aliquet</li>
-                                        <li>Nulla volutpat aliquam velit></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 grid-margin stretch-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Games</h4>
-                                    <p class="card-description">Do some activities to take the edge off.</p>
-                                    <ul class="list-star">
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                        <li>Consectetur adipiscing elit</li>
-                                        <li>Integer molestie lorem at massa</li>
-                                        <li>Facilisis in pretium nisl aliquet</li>
-                                        <li>Nulla volutpat aliquam velit></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-------------Start of First 3 Boxes Section --------------->
-                    <!-------------Start of Second 3 Boxes Section --------------->
-                    <div class="row">
-                        <div class="col-md-4 grid-margin stretch-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Read</h4>
-                                    <p class="card-description">Add class <code>.list-ticked</code> to <code>&lt;ul&gt;</code></p>
-                                    <ul class="list-ticked">
-                                        <li>101 Ways to Deal With Stress</li>
-                                        <li>Consectetur adipiscing elit</li>
-                                        <li>Integer molestie lorem at massa</li>
-                                        <li>Facilisis in pretium nisl aliquet</li>
-                                        <li>Nulla volutpat aliquam velit></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 grid-margin stretch-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Videos</h4>
-                                    <p class="card-description">Add class <code>.list-arrow</code> to <code>&lt;ul&gt;</code></p>
-                                    <ul class="list-arrow">
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                        <li>Consectetur adipiscing elit</li>
-                                        <li>Integer molestie lorem at massa</li>
-                                        <li>Facilisis in pretium nisl aliquet</li>
-                                        <li>Nulla volutpat aliquam velit></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 grid-margin stretch-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Music</h4>
-                                    <p class="card-description">Add class <code>.list-star</code> to <code>&lt;ul&gt;</code></p>
-                                    <ul class="list-star">
-                                        <li>Lorem ipsum dolor sit amet</li>
-                                        <li>Consectetur adipiscing elit</li>
-                                        <li>Integer molestie lorem at massa</li>
-                                        <li>Facilisis in pretium nisl aliquet</li>
-                                        <li>Nulla volutpat aliquam velit></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-------------End of Second 3 Boxes Section --------------->
 
-
-
-                    <div class="row">
+                    @*<div class="row">
                         <div class="col-md-8 grid-margin stretch-card">
                             <div class="card">
                                 <div class="card-body">
@@ -548,58 +408,58 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>*@
                     <div class="row">
                         <div class="col-md-8">
                             <div class="row">
-                                <div class="col-md-6 grid-margin stretch-card">
-                                    <div class="card">
-                                        <div class="card-body pb-0">
-                                            <div class="d-flex justify-content-between">
-                                                <h4 class="card-title mb-0">Total Revenue</h4>
-                                                <p class="font-weight-semibold mb-0">+1.37%</p>
-                                            </div>
-                                            <h3 class="font-weight-medium mb-4">184.42K</h3>
-                                        </div>
-                                        <canvas class="mt-n4" height="90" id="total-revenue"/>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 grid-margin stretch-card">
-                                    <div class="card">
-                                        <div class="card-body pb-0">
-                                            <div class="d-flex justify-content-between">
-                                                <h4 class="card-title mb-0">Transaction</h4>
-                                                <p class="font-weight-semibold mb-0">-2.87%</p>
-                                            </div>
-                                            <h3 class="font-weight-medium">147.7K</h3>
-                                        </div>
-                                        <canvas class="mt-n3" height="90" id="total-transaction"/>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 grid-margin">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h4 class="card-title mb-0">Market Overview</h4>
-                                            <div class="d-flex align-items-center justify-content-between w-100">
-                                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                                <div class="dropdown">
-                                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dateSorter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">This Month</button>
-                                                    <div class="dropdown-menu" aria-labelledby="dateSorter">
-                                                        <div class="dropdown-item" id="market-overview_1">Daily</div>
-                                                        <div class="dropdown-item" id="market-overview_2">Weekly</div>
-                                                        <div class="dropdown-item" id="market-overview_3">Monthly</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-end">
-                                                <h3 class="mb-0 font-weight-semibold">$36,2531.00</h3>
-                                                <p class="mb-0 font-weight-medium mr-2 ml-2 mb-1">USD</p>
-                                                <p class="mb-0 text-success font-weight-semibold mb-1">(+1.37%)</p>
-                                            </div>
-                                            <canvas class="mt-4" height="100" id="market-overview-chart"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
+                                @*<div class="col-md-6 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body pb-0">
+                    <div class="d-flex justify-content-between">
+                        <h4 class="card-title mb-0">Total Revenue</h4>
+                        <p class="font-weight-semibold mb-0">+1.37%</p>
+                    </div>
+                    <h3 class="font-weight-medium mb-4">184.42K</h3>
+                </div>
+                <canvas class="mt-n4" height="90" id="total-revenue"/>
+            </div>
+        </div>
+        <div class="col-md-6 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body pb-0">
+                    <div class="d-flex justify-content-between">
+                        <h4 class="card-title mb-0">Transaction</h4>
+                        <p class="font-weight-semibold mb-0">-2.87%</p>
+                    </div>
+                    <h3 class="font-weight-medium">147.7K</h3>
+                </div>
+                <canvas class="mt-n3" height="90" id="total-transaction"/>
+            </div>
+        </div>*@
+                                @*<div class="col-md-12 grid-margin">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title mb-0">Market Overview</h4>
+                    <div class="d-flex align-items-center justify-content-between w-100">
+                        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dateSorter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">This Month</button>
+                            <div class="dropdown-menu" aria-labelledby="dateSorter">
+                                <div class="dropdown-item" id="market-overview_1">Daily</div>
+                                <div class="dropdown-item" id="market-overview_2">Weekly</div>
+                                <div class="dropdown-item" id="market-overview_3">Monthly</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-end">
+                        <h3 class="mb-0 font-weight-semibold">$36,2531.00</h3>
+                        <p class="mb-0 font-weight-medium mr-2 ml-2 mb-1">USD</p>
+                        <p class="mb-0 text-success font-weight-semibold mb-1">(+1.37%)</p>
+                    </div>
+                    <canvas class="mt-4" height="100" id="market-overview-chart"></canvas>
+                </div>
+            </div>
+        </div>*@
                                 <div class="col-md-12 grid-margin">
                                     <div class="card">
                                         <div class="card-body">
@@ -705,6 +565,79 @@
                                         </div>
                                     </div>
                                 </div>
+
+
+                                <div class="col-md-6 grid-margin stretch-card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title mb-0">Recent Events</h4>
+                                            <div class="d-flex py-2 border-bottom">
+                                                <div class="wrapper">
+                                                    <small class="text-muted">Mar 14, 2019</small>
+                                                    <p class="font-weight-semibold text-gray mb-0">Change in Directors</p>
+                                                </div>
+                                                <small class="text-muted ml-auto">Edit event</small>
+                                            </div>
+                                            <div class="d-flex py-2 border-bottom">
+                                                <div class="wrapper">
+                                                    <small class="text-muted">Mar 14, 2019</small>
+                                                    <p class="font-weight-semibold text-gray mb-0">Other Events</p>
+                                                </div>
+                                                <small class="text-muted ml-auto">Edit event</small>
+                                            </div>
+                                            <div class="d-flex py-2 border-bottom">
+                                                <div class="wrapper">
+                                                    <small class="text-muted">Mar 14, 2019</small>
+                                                    <p class="font-weight-semibold text-gray mb-0">Quarterly Report</p>
+                                                </div>
+                                                <small class="text-muted ml-auto">Edit event</small>
+                                            </div>
+                                            <div class="d-flex pt-2">
+                                                <div class="wrapper">
+                                                    <small class="text-muted">Mar 14, 2019</small>
+                                                    <p class="font-weight-semibold text-gray mb-0">Change in Directors</p>
+                                                </div>
+                                                <small class="text-muted ml-auto">Edit event</small>
+                                            </div>
+                                            <a class="d-block mt-5" href="#">Show all</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 grid-margin stretch-card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between pb-3">
+                                                <h4 class="card-title mb-0">Activities</h4>
+                                                <p class="mb-0 text-muted">20 finished, 5 remaining</p>
+                                            </div>
+                                            <ul class="timeline">
+                                                <li class="timeline-item">
+                                                    <p class="timeline-content"><a href="#">Ben Tossell</a> assign you a task</p>
+                                                    <p class="event-time">Just now</p>
+                                                </li>
+                                                <li class="timeline-item">
+                                                    <p class="timeline-content"><a href="#">Ben Tossell</a> assign you a task</p>
+                                                    <p class="event-time">Just now</p>
+                                                </li>
+                                                <li class="timeline-item">
+                                                    <p class="timeline-content"><a href="#">Ben Tossell</a> assign you a task</p>
+                                                    <p class="event-time">Just now</p>
+                                                </li>
+                                                <li class="timeline-item">
+                                                    <p class="timeline-content"><a href="#">Ben Tossell</a> assign you a task</p>
+                                                    <p class="event-time">Just now</p>
+                                                </li>
+                                                <li class="timeline-item">
+                                                    <p class="timeline-content"><a href="#">Ben Tossell</a> assign you a task</p>
+                                                    <p class="event-time">Just now</p>
+                                                </li>
+                                            </ul>
+                                            <a class="d-block mt-3" href="#">Show all</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -754,7 +687,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12 grid-margin">
+                                @*<div class="col-md-12 grid-margin">
                                     <div class="card">
                                         <div class="card-body">
                                             <h4 class="card-title mb-4">World sellings</h4>
@@ -784,7 +717,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>*@
                                 <div class="col-md-12 grid-margin">
                                     <div class="card">
                                         <div class="card-body">
@@ -827,126 +760,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4 grid-margin stretch-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title mb-0">Recent Events</h4>
-                                    <div class="d-flex py-2 border-bottom">
-                                        <div class="wrapper">
-                                            <small class="text-muted">Mar 14, 2019</small>
-                                            <p class="font-weight-semibold text-gray mb-0">Change in Directors</p>
-                                        </div>
-                                        <small class="text-muted ml-auto">Edit event</small>
-                                    </div>
-                                    <div class="d-flex py-2 border-bottom">
-                                        <div class="wrapper">
-                                            <small class="text-muted">Mar 14, 2019</small>
-                                            <p class="font-weight-semibold text-gray mb-0">Other Events</p>
-                                        </div>
-                                        <small class="text-muted ml-auto">Edit event</small>
-                                    </div>
-                                    <div class="d-flex py-2 border-bottom">
-                                        <div class="wrapper">
-                                            <small class="text-muted">Mar 14, 2019</small>
-                                            <p class="font-weight-semibold text-gray mb-0">Quarterly Report</p>
-                                        </div>
-                                        <small class="text-muted ml-auto">Edit event</small>
-                                    </div>
-                                    <div class="d-flex pt-2">
-                                        <div class="wrapper">
-                                            <small class="text-muted">Mar 14, 2019</small>
-                                            <p class="font-weight-semibold text-gray mb-0">Change in Directors</p>
-                                        </div>
-                                        <small class="text-muted ml-auto">Edit event</small>
-                                    </div>
-                                    <a class="d-block mt-5" href="#">Show all</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 grid-margin stretch-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between pb-3">
-                                        <h4 class="card-title mb-0">Activities</h4>
-                                        <p class="mb-0 text-muted">20 finished, 5 remaining</p>
-                                    </div>
-                                    <ul class="timeline">
-                                        <li class="timeline-item">
-                                            <p class="timeline-content"><a href="#">Ben Tossell</a> assign you a task</p>
-                                            <p class="event-time">Just now</p>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <p class="timeline-content"><a href="#">Ben Tossell</a> assign you a task</p>
-                                            <p class="event-time">Just now</p>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <p class="timeline-content"><a href="#">Ben Tossell</a> assign you a task</p>
-                                            <p class="event-time">Just now</p>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <p class="timeline-content"><a href="#">Ben Tossell</a> assign you a task</p>
-                                            <p class="event-time">Just now</p>
-                                        </li>
-                                        <li class="timeline-item">
-                                            <p class="timeline-content"><a href="#">Ben Tossell</a> assign you a task</p>
-                                            <p class="event-time">Just now</p>
-                                        </li>
-                                    </ul>
-                                    <a class="d-block mt-3" href="#">Show all</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 grid-margin stretch-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title mb-0">People Also Watch</h4>
-                                    <div class="table-responsive">
-                                        <table class="table table-stretched">
-                                            <thead>
-                                                <tr>
-                                                    <th>Symbol</th>
-                                                    <th>Last Price</th>
-                                                    <th>Change</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <p class="mb-1 text-dark font-weight-medium">NFLX</p><small class="font-weight-medium">Netflix, Inc.</small>
-                                                    </td>
-                                                    <td class="font-weight-medium">$250.00</td>
-                                                    <td class="text-success font-weight-medium">+12.64</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p class="mb-1 text-dark font-weight-medium">TSLA</p><small class="font-weight-medium">Tesla, Inc.</small>
-                                                    </td>
-                                                    <td class="font-weight-medium">$458.00</td>
-                                                    <td class="text-danger font-weight-medium">-14.53</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p class="mb-1 text-dark font-weight-medium">GOOG</p><small class="font-weight-medium">Alphabet, Inc.</small>
-                                                    </td>
-                                                    <td class="font-weight-medium">$250.00</td>
-                                                    <td class="text-danger font-weight-medium">+12.64</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p class="mb-1 text-dark font-weight-medium">AMZN</p><small class="font-weight-medium">Amazon.com, Inc.</small>
-                                                    </td>
-                                                    <td class="font-weight-medium">$546.00</td>
-                                                    <td class="text-success font-weight-medium">+24.34</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <a class="d-block mt-3" href="#">Show all</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
+
+
+
                 </div>
                 <!-- content-wrapper ends -->
                 <!-- partial:partials/_footer.html -->
