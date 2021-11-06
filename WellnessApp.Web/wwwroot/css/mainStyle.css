@@ -4,7 +4,7 @@
 }
 
 .sidebar {
-    background: linear-gradient(to top, #505865, #010488) !important;
+    background: linear-gradient(to top, #00ccc9, #010488) !important;
 }
 
 .navbar.default-layout .navbar-brand-wrapper {
@@ -61,4 +61,18 @@ section#contact {
 
 .content-wrapper {
     padding-bottom: 10%;
+}
+
+.table-hover {
+    --bs-table-hover-bg: rgb(135 193 248 / 20%);
+}
+
+.table-hover tbody tr:hover td {
+    background-color: rgb(135 193 248 / 20%) !important;
+}
+
+.ed-icon-holder {
+    border: 1px solid #023b1173 !important;
+    background: #ffeb3bb5 !important;
+    color: #03ac2f !important;
 }

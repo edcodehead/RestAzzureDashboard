@@ -11,6 +11,7 @@ namespace WellnessApp.DAL
     {
         //new public DbSet<User> Users { get; set; }
         //public DbSet<Address> Addresses { get; set; }
+        public DbSet<TodoItem> TodoItems { get; set; }
 
         public WellnessAppDbContext() : base()
         {
@@ -20,4 +21,5 @@ namespace WellnessApp.DAL
         }
 
     }
+
 }
